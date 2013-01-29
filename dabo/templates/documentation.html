@@ -1,0 +1,71 @@
+<%inherit file="/main.html"/>\
+<%page cached="False"/>
+<%def name="title()">Dabo - Documentation</%def>
+<%def name="body()">
+
+		<div class="title">Dabo Documentation</div>
+		<div class="contentdiv" style="margin-bottom: 4em;">
+		<h3>Tutorials</h3>
+		<ul>
+			<li><b><a href="http://docs.google.com/View?id=dg79jzmg_85f737ww6x" id="pycon_tutorial" name="pycon_tutorial"> PyCon 2010 Tutorial </a></b>: Our most complete document to date. It is taken from the Dabo tutorial at <b>PyCon Atlanta 2010</b>, but has been updated with more complete information. We will be adding to this document in the future, and this link will always show you the latest version.</li>
+			<li><b><a href="pycon_2010_tutorial.pdf" id="pycon_tutorial_pdf" name="pycon_tutorial_pdf">PDF version of the PyCon 2010 Tutorial </a></b>: For those who may not always have online connections, this is a PDF version of the above tutorial. We'll try to keep this in sync with the live document as best as possible.</li>
+			<li><b><a href="http://docs.google.com/Doc?id=dg79jzmg_3x78zkp" id="step-by-step" name="step-by-step"> The Step-By-Step Guide to Dabo Programming</a></b>: A tutorial that walks you through creating an application in Dabo. The tutorial is not yet completed, but much of the same information is available in the PyCon tutorial doc. In the future we will be updating the PyCon Tutorial; this tutorial will most like not receive further updates.</li>
+			<li><b><a href="http://j.mp/830AMm" id="dabo_web_apps" name="dabo_web_apps">Creating a Web Application with Dabo</a></b>: Dabo applications can be run with the data and bizobjs on your server, with clients dynamically downloading your rich UI application as simply as they would any web page by using Springboard. This paper discusses how to configure the server side of things for such an app.</li>
+			<li><b><a href="/grabit/dabo/Hello_msgBox_DaboClassDesigner_Tutorial_V1-02.pdf" id="hello_msgbox" name="hello_msgbox">Hello_MsgBox</a></b>: Using the Dabo Class Designer to produce what may be the simplest GUI application. Written by <b>Bill Maxwell</b>.</li>
+		</ul>
+		</div>
+
+		<div class="contentdiv" style="margin-bottom: 4em;">
+		<h3>Screencasts</h3>
+		<p>In an effort to help you understand Dabo better, we've begun producing some <b>screencasts</b> on various Dabo topics.  </p>
+		<ul>
+			<li><a href="http://c0129431.cdn.cloudfiles.rackspacecloud.com/show_hide_controls.html" id="showhidecontrols" name="showhidecontrols">Selectively Showing/Hiding Groups of Controls</a> (Ed, 2010-09-22, about 5 minutes)</li>
+			<li><a href="http://c0129431.cdn.cloudfiles.rackspacecloud.com/browse_shell.html" id="browseshell" name="browseshell">Tips on Using the Dabo Shell and the dabo.ui.browse() Function</a> (Ed, 2010-04-25, about 5 minutes)</li>
+			<li><a href="http://c0129431.cdn.cloudfiles.rackspacecloud.com/realworlddabo.html" id="realworlddabo" name="realworlddabo">A Real World Example of What You Can Do With Dabo</a> (John Fabiani/ Larry Long, 2007-10-30, about 3 to 5 minutes)</li>
+			<li><a href="http://c0129431.cdn.cloudfiles.rackspacecloud.com/dataenvironment2.html" id="dataenv2" name="dataenv2">Building a Database Application using the Dabo Class Designer (Part 2)</a> (Ed, 2007-01-05, about 9.5 minutes)</li>
+			<li><a href="http://c0129431.cdn.cloudfiles.rackspacecloud.com/dataenvironment1.html" id="dataenv1" name="dataenv1">Building a Database Application using the Dabo Class Designer (Part 1)</a> (Ed, 2007-01-04, about 10 minutes)</li>
+			<li><a href="http://c0129431.cdn.cloudfiles.rackspacecloud.com/addproperty.html" id="addproperty" name="addproperty">An over-the-shoulder look at Dabo development</a> (Ed, 2006-09-30, about 13 minutes)</li>
+			<li><a href="http://c0129431.cdn.cloudfiles.rackspacecloud.com/appwizard.html" id="appwizard" name="appwizard">Create a Database Application in Less Than a Minute</a> (Ed, 2006-05-30, about 5 minutes)</li>
+			<li><a href="http://c0129431.cdn.cloudfiles.rackspacecloud.com/populategrid.html" id="populategrid" name="populategrid">Populating a Grid Using Business Objects</a> (Ed, 2006-04-20, 10 minutes 40 seconds)</li>
+			<li><a href="http://c0129431.cdn.cloudfiles.rackspacecloud.com/ReportDesignerOverviewPartTwo.html" id="reportdesigner2" name="reportdesigner2">Report Designer Overview, Part 2</a> (Paul, 2006-02-17, 10 minutes)</li>
+			<li><a href="http://c0129431.cdn.cloudfiles.rackspacecloud.com/ReportDesignerOverview.html" id="reportdesigner1" name="reportdesigner1">Report Designer Overview</a> (Paul, 2006-02-13, 23 minutes)</li>
+			<li><a href="http://c0129431.cdn.cloudfiles.rackspacecloud.com/sizers2.html" id="sizers2" name="sizers2">Using Sizers, part 2</a> (Ed, 2006-01-20)</li>
+			<li><a href="http://c0129431.cdn.cloudfiles.rackspacecloud.com/sizers1.html" id="sizers1" name="sizers1">Using Sizers, part 1</a> (Ed, 2006-01-03)</li>
+			<li><a href="http://c0129431.cdn.cloudfiles.rackspacecloud.com/codedemo.html" id="codedemo" name="codedemo">Working with code in the Designer</a> (Ed, 2005-12-16)</li>
+			<li><a href="http://media.libsyn.com/media/akselsoft/FSDaboCastI.wmv" id="akselAppWiz" name="akselAppWiz">The AppWizard</a> (courtesy of Andrew MacNeill's <u><a href="http://akselsoft.libsyn.com/" id="foxshow" name="foxshow">FoxShow</a></u>)</li>
+		</ul>
+		<h4>Downloadable Screencasts</h4>
+		<p>If you have a slow internet connection, or want to be able to view the screencasts offline, we are making them available for downloading.</p>
+		<ul>
+			<li><a href="/grabit/dabo/show_hide_controls.zip">Selectively Showing/Hiding Groups of Control</a></li>
+			<li><a href="/grabit/dabo/browse_shell.zip">Tips on Using the Dabo Shell and the dabo.ui.browse() Function</a></li>
+			<li><a href="/grabit/dabo/realworlddabo.zip">A Real World Example of What You Can Do With Dabo</a></li>
+			<li><a href="/grabit/dabo/dataenv2screencast.zip">Building a Database App in the Class Designer, Part 2</a></li>
+			<li><a href="/grabit/dabo/dataenv1screencast.zip">Building a Database App in the Class Designer, Part 1</a></li>
+			<li><a href="/grabit/dabo/appwizardscreencast.zip">The Dabo Application Wizard</a></li>
+			<li><a href="/grabit/dabo/populategridscreencast.zip">Populating a Grid Using Business Objects</a></li>
+			<li><a href="/grabit/dabo/reportdesigneroverviewscreencast.zip">Report Designer Overview</a></li>
+			<li><a href="/grabit/dabo/reportdesignerparttwoscreencast.zip">Report Designer Overview, Part 2</a></li>
+			<li><a href="/grabit/dabo/sizers1screencast.zip">Using Sizers, Part 1</a></li>
+			<li><a href="/grabit/dabo/sizers2screencast.zip">Using Sizers, Part 2</a></li>
+			<li><a href="/grabit/dabo/addpropertyscreencast.zip">Dabo Development</a></li>
+			<li><a href="/grabit/dabo/codedemoscreencast.zip">Writing Code in the Designer</a></li>
+			<li><a href="/grabit/dabo/designerdemoscreencast.zip">Using a <i>very old</i> version of the Designer</a></li>
+		</ul>
+		</div>
+		
+		<div class="contentdiv" style="margin-bottom: 4em;">
+		<h3>API Docs</h3>
+		<ul>
+			<li>Auto-generated <a href="http://docs.dabodev.com/">API Documentation</a> is now available. We'll try to keep this reasonably up to date.</li>
+
+			<li>Wiki Framework documentation is available on the <a href="http://wiki.dabodev.com/FrameworkDocumentation">Dabo Wiki</a>. It contains most of the Dabo classes, along with several examples of how to use each of them.</li>
+		</ul>
+
+		</div>
+
+	<p style="margin-bottom:30px">&nbsp;</p>
+
+	</div>
+
+</%def>

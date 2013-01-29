@@ -1,0 +1,91 @@
+<%inherit file="/main.html"/>\
+<%page cached="False"/>
+<%def name="title()">About the Dabo Application Framework</%def>
+<%def name="body()">
+<div>
+    <div class="title">About Dabo</div>
+    <div class="contentdiv">
+        <p><b>Desktop applications</b>. That's what Dabo does. It's not <b><i>YAWF</i></b> (yet another web framework). There are plenty of excellent web frameworks out there, so if that's what you are looking for, Dabo isn't for you. But there are almost no desktop application frameworks out there, and if you want to create applications that run on Windows, OS X or Linux, Dabo is for you!</p>
+        <ul>
+            <li><a href='#background'>Background</a></li>
+            <li><a href='#3tier'>3-Tier Design</a></li>
+                <ul>
+                    <li><a href='#db'>Database</a></li>
+                    <li><a href='#biz'>Business Objects</a></li>
+                    <li><a href='#ui'>User Interface</a></li>
+                </ul>
+            <li><a href='#platforms'>Multi-Platform</a></li>
+            <li><a href='#community'>Community</a></li>
+            <li><a href='http://wiki.dabodev.com/screenshots'>Screenshots</a></li>
+            <li><a href='/licensing'>License</a></li>
+        </ul>
+
+    
+        <p>Dabo is a 3-tier, cross-platform application development framework, written in <a href='http://www.python.org'>Python</a> atop the <a href='http://www.wxpython.org'>wxPython</a> GUI toolkit. And while Dabo is designed to create database-centric apps, that is not a requirement. Lots of people are using Dabo for the GUI tools to create apps that have no need to connect to a database at all.</p>
+        
+
+        <div class="subhead"><a name="background">Background</a></div>
+        <p>Dabo's authors, <b>Ed Leafe</b> and <b>Paul McNett</b>, have strong backgrounds in database application development using the awesome and underrated <a href='http://msdn.microsoft.com/vfoxpro'>Microsoft Visual FoxPro</a> development environment. </p>
+        
+        <p>While Visual FoxPro shines at developing data-centric applications, it has one limitation that cannot be ignored: it only runs on Microsoft Windows, and Ed and Paul both have clients that want their applications to run on Linux and Macintosh. We are sure we are not alone in this regard: it is a multi-platform world with more diverse needs than one vendor can fulfill. </p>
+        
+        <p>Ed and Paul got to talking one day: Paul had been researching various multiplatform GUI toolkits for about 18 months, and Ed has lots of experience developing the Visual FoxPro Codebook framework. We decided to work together to make a framework for developing robust data-centric applications for multi-platform deployment. We've come up with a design that is simple, flexible, and robust, and we've begun developing our own client applications using the Dabo framework.</p>
+        
+        <div class="subhead"><a name="3tier">3-Tier Design</a></div>
+        
+        <p>We have taken what we've learned from 25 combined years of FoxPro database application development, and built an easy-to-use runtime framework that runs on all three major platforms. Dabo consists of 3 logical tiers plus an umbrella application object. The three tiers are:</p>
+        
+        <div class="subhead"><a name="db">Database</a></div>
+        
+        <p>Currently, Dabo supports <b>MySQL</b>, <b>PostgreSQL</b>, <b>Firebird</b>, <b>Microsoft SQL Server</b> and <b>SQLite</b>  backends, but in the near future it will support all databases that have drivers that conform to the Python dbapi. These databases include:</p>
+        <ul>
+            <li>MySQL (already supported)</li>
+            <li>PostgreSQL(already supported)</li>
+            <li>Firebird (already supported)</li>
+            <li>MS-SQL and MSDE (already supported)</li>
+            <li>SQLite (already supported)</li>
+            <li>Oracle</li>
+            <li>DB2</li>
+            <li>Sybase</li>
+            <li>Berkeley DB</li>
+        </ul>
+
+        <div class="subhead"><a name="biz">Business Rules</a></div>
+
+        <p>This tier is where all the business logic resides. You simply subclass dBizobj, set a few properties, and override a few methods. The dBizobj communicates with the database tier and the user interface tier, and enforces your business rules to your specifications.</p>
+        
+        <div class="subhead"><a name="ui">User Interface</a></div>
+        
+        <p>You create your forms by laying out various controls or widgets, and setting properties to tell Dabo what bizobj and what field in the dataset the control represents. There is no business logic at this level, and only minimal code will be entered here: it is mostly laying out your UI design and setting properties to tell Dabo how to connect to the business rules. </p>
+        
+        <p>Currently, the only supported UI is <a href="http://www.wxpython.org">wxPython</a>, but we've left it open for possible future additions of other UI libraries, such as:</p>
+
+        <ul>
+            <li>wxPython (already supported)</li>
+            <li>PyQt</li>
+            <li>TkInter</li>
+            <li>Curses (text only - perhaps the computer isn't running a GUI)</li>
+            <li>HTTP (web server providing a browser interface)</li>
+        </ul>
+        <p>However, wrapping a UI toolkit is a major effort, so don't hold your breath waiting for any of the other UIs - unless, of course, you want to volunteer to work with us to get it working!</p>
+        
+        <div class="subhead"><a name="platforms">Multi-Platform</a></div>
+
+        <p>Dabo applications are known to run on all flavors of Windows, all recent flavors of Linux, and Macintosh OS X 10.2 or higher. Because Dabo is currently built on top of <b>wxPython</b>, which is built on top of wxWidgets, it probably runs elsewhere, too. It also suffers from the same display limitations on some platforms (most notably OS X), but these should improve as the underlying toolkits improve.</p>
+        
+        <p>You can develop Dabo applications on all three supported platforms, and you can run your Dabo applications on all three supported platforms. Flexibility is a really good thing.</p>
+        
+        <div class="subhead"><a name="community">Community</a></div>
+        
+        <p>Visual FoxPro has a vibrant, vocal, energetic community that knows how to have a good time. From what we've seen of the Python community so far, the same goes there. We hope to provide the structure for forming a new community, a Dabo community that shares ideas and code, supports one-another, and hopefully even gets together once a year to socialize. There are mailing lists for <a href="http://leafe.com/mailman/listinfo/dabo-users">users of Dabo</a> and <a href="http://leafe.com/mailman/listinfo/dabo-dev">developers of Dabo</a>, and a <a href="http://wiki.dabodev.com/">world-editable Dabo Wiki</a>. We are friendly and look forward to meeting you. </p>
+        
+        <p>Oh, and if you are a disenchanted <b>Visual Basic</b> developer, you've found the right place, too. </p>
+<!-- <img src="/smilies/wink.gif" alt="wink!"> -->
+        
+        <p style="margin-bottom:30px">&nbsp;</p>
+        
+    </div>
+
+</div>
+
+</%def>

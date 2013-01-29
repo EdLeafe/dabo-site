@@ -1,0 +1,9 @@
+<%inherit file="/main.html"/>\
+<%page cached="False"/>
+<%def name="title()">Dabo News</%def>
+<%def name="body()">
+<%
+from webhelpers.html.builder import literal
+return literal(c.news_content)
+%>
+</%def>
