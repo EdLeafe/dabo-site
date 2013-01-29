@@ -23,6 +23,7 @@ def make_map():
     map.connect("/", controller="about", action="index")
     map.connect("/grabit/*url", controller="grabit", method="index", action="index")
     map.connect("/{controller}", method="index", action="index")
+    map.connect("/{controller}/", method="index", action="index")
     map.connect("/{controller}/{action}", action="index")
     map.connect("/{controller}/{action}/{id}", action="index")
 

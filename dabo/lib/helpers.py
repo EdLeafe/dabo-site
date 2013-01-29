@@ -5,6 +5,8 @@ available to Controllers. This module is available to templates as 'h'.
 """
 # Import helpers as desired, or define your own, ie:
 #from webhelpers.html.tags import checkbox, password
+from routes import url_for
+
 
 VERSION_FILE = "/home/ed/pylons/dabo/log/latest_version"
 
@@ -19,5 +21,4 @@ def update_current_version():
 	resp = urllib2.urlopen(url)
 	with file(VERSION_FILE, "w") as ff:
 		ff.write(resp)
-
-
+	return resp

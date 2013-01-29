@@ -17,6 +17,11 @@ dl_pat = re.compile(r"dabo_(.{3})_download")
 
 class GrabitController(BaseController):
 	def index(self, url):
+		log.info("E" * 44)
+		log.info(url)
+		if url == "foo":
+			log.info("E" * 44)
+			return h.url_for(controller="latest")
 		try:
 			dl_platform = dl_pat.match(url).groups()[0]
 		except AttributeError:
