@@ -8,15 +8,11 @@ from pylons import app_globals
 from pylons.controllers.util import abort, redirect
 
 from dabo.lib.base import BaseController, render
+import dabo.lib.helpers as h
+
 
 log = logging.getLogger(__name__)
 dl_pat = re.compile(r"dabo_(.{3})_download")
-
-
-def get_current_version():
-	url = "http://daboserver.com/currentversion"
-	resp = urllib2.urlopen(url)
-	return resp.read()
 
 
 class GrabitController(BaseController):
@@ -28,7 +24,7 @@ class GrabitController(BaseController):
 		if dl_platform:
 			ext = {"nix": "tar.gz", "win": "zip"}[dl_platform]
 			try:
-				version = get_current_version()
+				version = h.get_current_version()
 			except Exception as e:
 				log.error("Error getting version info: %s" % e)
 				return "<h2>Sorry, something didn't work as expected. Please send a nasty email " \
