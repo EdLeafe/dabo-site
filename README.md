@@ -4,15 +4,15 @@ you would include information such as the information below:
 Installation and Setup
 ======================
 
-Install ``dabo`` using easy_install::
+Install `dabo` using easy_install:
 
     easy_install dabo
 
-Make a config file as follows::
+Make a config file as follows:
 
     paster make-config dabo config.ini
 
-Tweak the config file as appropriate and then setup the application::
+Tweak the config file as appropriate and then setup the application:
 
     paster setup-app config.ini
 
