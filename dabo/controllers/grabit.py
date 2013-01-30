@@ -1,7 +1,6 @@
 import logging
 import os
 import re
-import urllib2
 
 from pylons import request, response, session, tmpl_context as c
 from pylons import app_globals
@@ -17,11 +16,7 @@ dl_pat = re.compile(r"dabo_(.{3})_download")
 
 class GrabitController(BaseController):
 	def index(self, url):
-		log.info("E" * 44)
-		log.info(url)
-		if url == "foo":
-			log.info("E" * 44)
-			return h.url_for(controller="latest")
+		version = ""
 		try:
 			dl_platform = dl_pat.match(url).groups()[0]
 		except AttributeError:
@@ -39,5 +34,9 @@ class GrabitController(BaseController):
 		else:
 			pth = str(os.path.join(app_globals.CDNBASE, url))
 		addr = request.remote_addr
-		log.info("[%s] Download Request: %s" % (addr, url))
+		if version:
+			vers = " (%s)" % version
+		else:
+			vers = version
+		log.info("[%s] Download Request: %s%s" % (addr, url, vers))
 		redirect(pth)
