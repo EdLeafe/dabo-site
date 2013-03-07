@@ -9,6 +9,25 @@
 <description>Messages from the Dabo developers</description>
 <language>en</language>
 <item>
+  <title>Dabo 0.9.9 Released</title>
+  <link>http://paul.dabodev.com/cgi-bin/pyblosxom.cgi/Announcements/Dabo-0.9.9.html</link>
+  <description><![CDATA[
+
+Please see the <a href="https://github.com/dabodev/dabo/blob/v0.9.9/RELEASENOTES.md">Release Notes for v0.9.9</a></li>
+
+
+]]></description>
+</item>
+
+<item>
+  <title>This is just a test, to see if tips go anywhere public. --Paul</title>
+  <link>http://paul.dabodev.com/cgi-bin/pyblosxom.cgi/Tips/test.html</link>
+  <description><![CDATA[
+
+]]></description>
+</item>
+
+<item>
   <title>Dabo 0.9.7 Released</title>
   <link>http://paul.dabodev.com/cgi-bin/pyblosxom.cgi/Announcements/Dabo-0.9.7.html</link>
   <description><![CDATA[
@@ -16,6 +35,17 @@
 based on found problems by our users.</p>
 
 Here are the changes: <a href="https://github.com/dabodev/dabo/blob/v0.9.7/RELEASENOTES.md">Release Notes for v0.9.7</a></li>
+
+
+]]></description>
+</item>
+
+<item>
+  <title>Dabo 0.9.8 Released</title>
+  <link>http://paul.dabodev.com/cgi-bin/pyblosxom.cgi/Announcements/Dabo-0.9.8.html</link>
+  <description><![CDATA[
+
+Please see the <a href="https://github.com/dabodev/dabo/blob/v0.9.8/RELEASENOTES.md">Release Notes for v0.9.8</a></li>
 
 
 ]]></description>
@@ -897,61 +927,6 @@ action, and the view/modify the code that instantiated the objects.
 This is based on the excellent demo application framework in wxPython,
 but rewritten in Dabo code. Oh, and minesweeper is faster. :)
 
-
-]]></description>
-</item>
-
-<item>
-  <title>Finally! Dabo 0.7!</title>
-  <link>http://paul.dabodev.com/cgi-bin/pyblosxom.cgi/Announcements/Dabo-0.7.html</link>
-  <description><![CDATA[
-<p>It's been a busy year for Paul and Ed, but somehow they've managed, with
-the help of a growing number of users and contributors, to keep the ball
-rolling and end up with the next incremental release. There have been lots
-of enhancements and bugfixes (see the 
-<a href="http://svn.dabodev.com/dabo/tags/dabo-0.7/ChangeLog">ChangeLog</a>), 
-and we are proud of what we've created. You can get the latest release from the 
-<a href="http://dabodev.com/download">download page</a>. Enjoy!</p>
-
-
-]]></description>
-</item>
-
-<item>
-  <title>Warning: Current Dabo Not Compatible With wxPython 2.7</title>
-  <link>http://paul.dabodev.com/cgi-bin/pyblosxom.cgi/Announcements/WarningAboutWx27.html</link>
-  <description><![CDATA[
-<p>We weren't worried about wxPython 2.7 introducing properties, because we
-knew it would be a while until wxPython 2.8 (the stable release that would 
-go in all the distributions and application developers would use) came into 
-the wild. However, the good folks over at wxWidgets have decided to turbo
-charge the effort to get wx2.8 out the door so it can be included in the
-next release of Apple's OS X. The upshot: wxWidgets 2.7 only just appeared
-on the scene, yet 2.8 is just around the corner, and current Dabo does not
-work with it, because of the way property definitions work in Python 
-mix-in classes. Basically, some of wxPython's properties are trumping 
-Dabo's, even though Dabo should be the subclass and thus trump everything.</p>
-
-<p>No worries, though. We know how to proceed, but have decided to wait until
-after the first release of Dabo-0.7. Once we have the fix in 0.8, we'll
-backport it to the Dabo-0.7 stable version. So, just be patient for now and
-keep using wxPython 2.6.x with Dabo.</p>
-
-
-]]></description>
-</item>
-
-<item>
-  <title>New Stable Release (0.6.6s)</title>
-  <link>http://paul.dabodev.com/cgi-bin/pyblosxom.cgi/Announcements/Dabo-0.6.6.html</link>
-  <description><![CDATA[
-<p>We've uploaded a new stable release, the first since April. Get it from the 
-usual download page. However, stay tuned: hopefully next week we'll be rolling
-out Dabo-0.7 as the new stable release, and starting development on Dabo-0.8.
-Ed's been doing most of the work on this, but Paul's been benefitting from 
-the ever-increasing power of the Dabo system in developing several client
-applications. Thanks as always to everyone asking questions and contributing
-to the Dabo vision.</p>
 
 ]]></description>
 </item>
