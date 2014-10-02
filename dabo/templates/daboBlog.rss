@@ -9,6 +9,41 @@
 <description>Messages from the Dabo developers</description>
 <language>en</language>
 <item>
+  <title>Dabo 0.9.12 Released</title>
+  <link>http://paul.dabodev.com/cgi-bin/pyblosxom.cgi/Announcements/Dabo_0.9.12.html</link>
+  <description><![CDATA[
+
+Please see the <a href="https://github.com/dabodev/dabo/blob/v0.9.12/RELEASENOTES.md">Release Notes for v0.9.12</a>
+
+
+
+]]></description>
+</item>
+
+<item>
+  <title>Dabo 0.9.11 Released</title>
+  <link>http://paul.dabodev.com/cgi-bin/pyblosxom.cgi/Announcements/Dabo-0.9.11_.html</link>
+  <description><![CDATA[
+
+Please see the <a href="https://github.com/dabodev/dabo/blob/v0.9.11/RELEASENOTES.md">Release Notes for v0.9.11</a>
+
+
+]]></description>
+</item>
+
+<item>
+  <title>Dabo 0.9.10 Released</title>
+  <link>http://paul.dabodev.com/cgi-bin/pyblosxom.cgi/Announcements/Dabo-0.9.10_.html</link>
+  <description><![CDATA[
+
+Please see the <a href="https://github.com/dabodev/dabo/blob/v0.9.10/RELEASENOTES.md">Release Notes for v0.9.10</a>
+
+We are working toward 1.0 Real Soon Now.
+
+]]></description>
+</item>
+
+<item>
   <title>Dabo 0.9.9 Released</title>
   <link>http://paul.dabodev.com/cgi-bin/pyblosxom.cgi/Announcements/Dabo-0.9.9.html</link>
   <description><![CDATA[
@@ -876,58 +911,6 @@ same as the 0.7 release.</p>
 <p>	As usual, you can grab it from the <a
 href="http://dabodev.com/download"><b>Download Page</b></a>, or via FTP at
 <a href="ftp://dabodev.com/dabo/win">ftp://dabodev.com/dabo/win</a>.</p>
-]]></description>
-</item>
-
-<item>
-  <title>Dabo Runtime Engine For Windows 0.7 Released</title>
-  <link>http://paul.dabodev.com/cgi-bin/pyblosxom.cgi/Announcements/Dabo_Runtime_Engine_For_Windows_0.7_Released.html</link>
-  <description><![CDATA[
-<p><b>The Dabo Runtime Engine for Windows</b> is a self-contained environment that allows you to <b>run Dabo on Windows without having to first install all of the requirements</b>. It comes with its own version of Python 2.4.4, wxPython 2.6.3.3, and all of the other modules used in Dabo.</p>
-
-<p>The Dabo Runtime Engine is designed for people who are curious about Dabo, but who don't want the bother of installing all the required modules just to see what Dabo can do. It doesn't change any Windows Registry settings, so it will not affect any existing applications on your machine.</p>
-
-<p>This version installs several shortcuts that allow you to simple double-click an icon to run the desired file. Such shortcuts include the <b>AppWizard</b>, <b>Class Designer</b> and <b>Report Designer</b>, as well as several of the demo applications, including the new <b>DaboDemo</b> application, which allows you to see the demo and the code behind it. You can then modify that code to see how your changes affect the output.</p>
-
-<p>The Dabo Runtime Engine comes in two versions: the regular version that just runs the applications, and the Console version that display a command line window containing the application output and debuggng information. They are otherwise identical.</p>
-
-<p>You can download either version, along with all other things Dabo, from: the <a href="http://dabodev.com/download"><b>Dabo Download Page</b></a>.</p>
-
-]]></description>
-</item>
-
-<item>
-  <title>Dabo IDE 0.7 Released</title>
-  <link>http://paul.dabodev.com/cgi-bin/pyblosxom.cgi/Announcements/DaboIDE-0.7.html</link>
-  <description><![CDATA[
-<p>We are pleased to announce the release of DaboIDE 0.7. This will eventually
-be a true Integrated Development Environment, but currently contains a
-few key tools that aren't yet integrated. Nonetheless, you can visually
-design your GUI forms and controls, including adding code to methods,
-assigning property values, and laying out the form elements using the
-Class Designer. You can design custom reports using the Report Designer.
-You can build a full-featured application for very easily using the App
-Wizard.</p>
-
-<p>We'd also like to announce the new 0.7.1 bugfix release of Dabo and
-DaboDemo. Get all this from the <a href="http://dabodev.com/download">download page.</a></p>
-
-
-
-]]></description>
-</item>
-
-<item>
-  <title>Dabo Demo 0.7 Released</title>
-  <link>http://paul.dabodev.com/cgi-bin/pyblosxom.cgi/Announcements/DaboDemo-0.7.html</link>
-  <description><![CDATA[
-This version introduces a new demo application written in Dabo that 
-demonstrates various Dabo UI classes. You can see the objects in 
-action, and the view/modify the code that instantiated the objects.
-This is based on the excellent demo application framework in wxPython,
-but rewritten in Dabo code. Oh, and minesweeper is faster. :)
-
-
 ]]></description>
 </item>
 
