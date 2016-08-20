@@ -18,6 +18,23 @@
 </head>
 
 <body>
+<%
+    import datetime
+    yeartext = datetime.date.today().strftime('%Y') 
+
+    wiki_host = "wiki.%s" % c.http_host
+    navlinks = """ <a href="/about"><span class="navbartext">About</span></a>
+    <a href="/news"><span class="navbartext">News</span></a>
+    <a href="/download"><span class="navbartext">Download</span></a>
+    <a href="/documentation"><span class="navbartext">Documentation</span></a>
+    <!--		<a href="http://trac.dabodev.com"><span class="navbartext">Issue Tracker</span></a>   -->
+    <a href="http://%(wiki_host)s"><span class="navbartext">Wiki</span></a>
+    <a href="/support"><span class="navbartext">Support</span></a>
+    """ % locals()
+%>
+<!--
+    <a href="http://%(wiki_host)s/FAQs"><span class="navbartext">FAQ</span></a>
+ -->
 <table border="0" cellpadding="0" width="100%" class="heading">
 <tr>
 	<td align="left"><a href='/'><img src="/media/dabo_logo_250x100.png" width="250" height="100" border="0"></a></td>
@@ -46,14 +63,7 @@
 <table cellpadding="0" cellspacing="0" border="0" width="100%" height="51" class="navtable">
 <tr>
 	<td align="RIGHT" valign="top">
-		<a href="/about"><span class="navbartext">About</span></a>
-		<a href="/news"><span class="navbartext">News</span></a>
-		<a href="/download"><span class="navbartext">Download</span></a>
-		<a href="/documentation"><span class="navbartext">Documentation</span></a>
-		<a href="http://trac.dabodev.com"><span class="navbartext">Issue Tracker</span></a>
-		<a href="http://wiki.dabodev.com"><span class="navbartext">Wiki</span></a>
-		<a href="/support"><span class="navbartext">Support</span></a>
-		<a href="http://wiki.dabodev.com/FAQs"><span class="navbartext">FAQ</span></a>
+        ${navlinks | n}
 	</td>
 </tr>
 </table>
@@ -118,23 +128,12 @@
 <!-- END BODY -->
 
 <!-- BEGIN FOOTER -->
-<%
-	import datetime
-	yeartext = datetime.date.today().strftime('%Y') 
-%>
 
 <!-- BEGIN BOTTOM NAVIGATION -->
 <table cellpadding="0" cellspacing="0" border="0" width="100%" height="51" class="navtable bottom">
 <tr>
 	<td align="RIGHT" valign="top">
-		<a href="/about"><span class="navbartext bottom">About</span></a>
-		<a href="/news"><span class="navbartext bottom">News</span></a>
-		<a href="/download" style="padding-top: 5em;"><span class="navbartext bottom">Download</span></a>
-		<a href="/documentation"><span class="navbartext bottom">Documentation</span></a>
-		<a href="http://trac.dabodev.com"><span class="navbartext bottom">Issue Tracker</span></a>
-		<a href="http://wiki.dabodev.com"><span class="navbartext bottom">Wiki</span></a>
-		<a href="/support"><span class="navbartext bottom">Support</span></a>
-		<a href="http://wiki.dabodev.com/FAQs"><span class="navbartext bottom">FAQ</span></a>
+        ${navlinks | n}
 	</td>
 </tr>
 </table>
@@ -169,15 +168,6 @@
 		<td align="center" valign="middle" height="29" class="small">
 			&copy;2004-${yeartext}
 			<a href="http://paulmcnett.com">Paul McNett</a>, <a href="http://leafe.com">Ed Leafe</a>, et al.
-		</td>
-	</tr>
-	<tr>
-		<td align="center" valign="middle" class="small toppad">
-			<a href="http://www.rackspace.com/cloud" alt="Learn more about cloud computing from The Rackspace Cloud">
-				<img src="http://cdn.cloudfiles.rackspacecloud.com/c110782/rackspace_cloud_blk_sm.png" border="0" 
-				alt="Learn more about cloud computing from The Rackspace Cloud" width="150" height="61" />
-				Powered By Rackspace Cloud Computing
-			</a>
 		</td>
 	</tr>
 

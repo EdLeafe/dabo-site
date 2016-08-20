@@ -16,6 +16,6 @@ log = logging.getLogger(__name__)
 class NewsController(BaseController):
 
     def index(self):
-        raw_content = file("/home/ed/pylons/dabo/dabo/templates/news_content.html").read()
+        raw_content = file("/home/ed/projects/dabo/dabo/templates/news_content.html").read()
         c.news_content = raw_content.decode("utf-8")
         return render("/news.html")

@@ -11,7 +11,7 @@ import urllib2
 from routes import url_for
 
 
-VERSION_FILE = "/home/ed/pylons/dabo/log/latest_version"
+VERSION_FILE = "/home/ed/projects/dabo/log/latest_version"
 
 
 def get_current_version():
